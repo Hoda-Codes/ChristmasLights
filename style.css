@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: rgb(46, 68, 130);
+}
+
+svg {
+  width: 70vw;
+  height: 100vh;
+}
+#row-1 {
+  transform: translateY(-70px);
+}
+#row-2 {
+  transform: translateY(-40px);
+}
+#row-3 {
+  transform: translateY(-10px);
+}
+
+#row-4 {
+  transform: translateY(0px);
+}
+#row-5 {
+  transform: translateY(40px);
+}
+#row-6 {
+  transform: translateY(70px);
+}
+.controler {
+  width: 30vw;
+  height: 100vh;
+  background-color: rgb(135, 136, 156);
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 30px;
+}
+label {
+  display: block;
+  margin: 30px;
+}
+input {
+  margin: 30px;
+}
+
+/* .a {
+  fill: silver;
+  stroke: silver;
+  stroke-miterlimit: 10;
+  box-shadow: 0 0 60px 30px #fff;
+}
+.line {
+  fill: none;
+  stroke: silver;
+} */
+.row {
+  fill: none;
+  stroke: silver;
+}
+.selected {
+  display: none;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate {
+  animation: glow ease-in-out infinite;
+}
